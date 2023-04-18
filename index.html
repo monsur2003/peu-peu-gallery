@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <!-- Style css file is here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="title">
+        <h2>Photo Gallery of Green university Bangladesh</h2>
+    </header>
+    <div class="container">
+
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/FC_20220419_0134-PhotoRoom (1)_11zon (1)_11zon.jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Monsur</h3>
+                <p>Assistant Professor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/peupeu.jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Sadia</h3>
+                <p>Assistant Professor</p>
+                <p>Rajuk School and collage</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (1).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Sadia</h3>
+                <p>Assistant Professor</p>
+                <p>info@gmail.com</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (10).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Sadia</h3>
+                <p>Assistant Professor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (20).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Sadia</h3>
+                <p>Assistant Professor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (22).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Sadia</h3>
+                <p>Assistant Professor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (14).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Sadia</h3>
+                <p>Assistant Professor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (15).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Sadia</h3>
+                <p>Assistant Professor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (18).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Mahbub</h3>
+                <p>Assistant Professor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (17).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Tonmoy</h3>
+                <p>Assistant Professor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (19).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Gias uddin</h3>
+                <p>Instructor</p>
+                <p>faculty1@gub.edu.bd</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="image-container">
+                <img src="/image/cat (2).jpg" alt="Faculty 1">
+            </div>
+            <div class="description">
+                <h3>Jhankar</h3>
+                <p>Senior lecturer</p>
+                <p>ph@gmail.com</p>
+                <button class="btn">View Profile</button>
+            </div>
+        </div>
+
+        <div class="popup-container">
+            <span id="xbutton">&times;</span>
+            <img src="" alt="">
+        </div>
+
+        <!-- repeat the above code for the remaining faculty images -->
+    </div>
+
+
+    <!-- Javascript file is here -->
+
+    <script>
+
+        document.querySelectorAll('.image-container img').forEach(image => {
+            image.onclick = () => {
+                document.querySelector('.popup-container').style.display = 'block';
+                document.querySelector('.popup-container img').src = image.getAttribute('src')
+            }
+        })
+        document.getElementById('xbutton').onclick = () => {
+            document.querySelector('.popup-container').style.display = 'none';
+        }
+
+    </script>
+</body>
+
+</html>
